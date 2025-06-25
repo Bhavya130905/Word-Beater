@@ -18,8 +18,13 @@ Any modern web browser (Chrome, Firefox, Edge, Safari, etc.)
 
 # How to Play
 Select a Difficulty: Use the dropdown to choose Easy, Medium, or Hard.
+
 Start Typing: Type the displayed word into the input box before the timer runs out.
+
 Score Points: Each correct word increases your score.
+
 Restart: Click the "Restart Game" button to play again at any time.
+
 Mute/Unmute: Toggle sound effects using the speaker button in the top-right corner.
+
 Best Score: Try to beat your highest score, which is saved even if you close the browser.
