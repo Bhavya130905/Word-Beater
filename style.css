@@ -1,0 +1,154 @@
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+/* Header and Heading */
+header {
+  background: linear-gradient(90deg, #79e9a9 50%, #0a9bde 100%);
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  margin-bottom: 2rem;
+}
+.heading {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Word Display */
+.display-2 {
+  font-size: 4rem;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.2s;
+  background: linear-gradient(90deg, #f7971e 0%, #ffd200 100%);
+  border-radius: 20px;
+  color: #fff;
+  padding: 20px 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  animation: fadeInWord 0.6s;
+}
+@keyframes fadeInWord {
+  from { opacity: 0; transform: scale(0.95);}
+  to   { opacity: 1; transform: scale(1);}
+}
+
+/* Instruction Box */
+.card {
+  background: linear-gradient(90deg, #a18cd1 0%, #fbc2eb 100%);
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  color: #000;
+  margin-top: 2rem;
+}
+
+/* Lead Text and Timer */
+.lead {
+  color: #000 !important;
+  font-weight: bold !important;
+}
+#seconds {
+  color: #000 !important;
+  font-weight: bold;
+}
+
+/* Input Field */
+.form-control-lg {
+  height: 55px !important;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  border: 2px solid #79e9a9;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 8px rgba(121,233,169,0.04);
+}
+.form-control-lg:focus {
+  border-color: #0a9bde;
+  box-shadow: 0 0 0 3px rgba(10,155,222,0.15);
+}
+
+/* Dropdown Styling */
+#difficulty {
+  border-radius: 8px;
+  border: 2px solid #79e9a9;
+  font-weight: 600;
+  color: #333;
+  background: #fff;
+  transition: border-color 0.3s;
+}
+#difficulty:focus {
+  border-color: #0a9bde;
+}
+
+/* Score and Timer */
+h5, h3 {
+  margin: 0.5rem 0;
+}
+#score, #best-score, #time {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Progress Bar */
+.progress {
+  height: 20px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.progress-bar {
+  transition: width 0.5s linear, background 0.3s;
+}
+
+/* Message Styling */
+#message {
+  min-height: 35px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 4px 0;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .display-2 { font-size: 2.2rem; }
+  .heading { font-size: 2rem; }
+  .container { padding: 0 10px; }
+  .card { font-size: 0.95rem; }
+}
+
+.btn-custom {
+  background: linear-gradient(90deg, #79e9a9 0%, #0a9bde 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(10,155,222,0.08);
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-custom:hover, .btn-custom:focus {
+  background: linear-gradient(90deg, #0a9bde 0%, #79e9a9 100%);
+  transform: translateY(-2px) scale(1.03);
+  color: #fff;
+}
+
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
